@@ -111,27 +111,30 @@ function initScrollAnimations() {
         gsap.from('.skill-card', {
             scrollTrigger: {
                 trigger: '.skills',
-                start: 'top 80%',
+                start: 'top 85%',
+                toggleActions: 'play none none none' // Only play once
             },
-            y: 60,
+            y: 40,
             opacity: 0,
-            duration: 0.8,
-            stagger: 0.15,
-            ease: 'power3.out'
+            duration: 0.6,
+            stagger: 0.1,
+            ease: 'power2.out',
+            clearProps: "all"
         });
 
         // Projects cards
         gsap.from('.project-card', {
             scrollTrigger: {
-                trigger: '.projects',
-                start: 'top 90%',
+                trigger: '#projects',
+                start: 'top 85%',
+                toggleActions: 'play none none none'
             },
-            y: 30,
+            y: 40,
             opacity: 0,
-            duration: 0.5,
+            duration: 0.6,
             stagger: 0.1,
             ease: 'power2.out',
-            clearProps: "all" // Ensure it finishes with original styles
+            clearProps: "all"
         });
 
         // Stack items
@@ -332,24 +335,6 @@ function initMouseFollower() {
         el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
     });
 }
-
-// Intersection Observer for lazy loading
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.skill-card, .project-card, .stack-item').forEach(el => {
-    observer.observe(el);
-});
 
 // Performance: Debounce scroll events
 function debounce(func, wait = 10, immediate = true) {
