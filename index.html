@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reimon2563 | Desarrollador Full Stack</title>
+    <meta name="description" content="Portfolio de reimon2563 - Desarrollador Full Stack especializado en Python, Docker, JavaScript y React">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">&lt;reimon2563/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">¡Hola! Soy</p>
+            <h1 class="hero-name">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-title">Desarrollador Full Stack</p>
+            <p class="hero-description">
+                Construyo soluciones escalables con Python, Docker y tecnologías modernas.
+                Transformo ideas en código elegante.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Ver Proyectos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contacto</span>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">main.py</span>
+                </div>
+                <pre><code><span class="keyword">def</span> <span class="function">developer</span>():
+    <span class="keyword">return</span> {
+        <span class="string">'name'</span>: <span class="string">'jgrdev'</span>,
+        <span class="string">'skills'</span>: [<span class="string">'Python'</span>, <span class="string">'Docker'</span>, <span class="string">'React'</span>],
+        <span class="string">'passion'</span>: <span class="string">'code'</span>,
+        <span class="string">'coffee'</span>: <span class="number">∞</span>
+    }</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2 class="section-title">Skills & Tecnologías</h2>
+            <p class="section-subtitle">Herramientas que domino para crear soluciones potentes</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Backend, ML, Automatización</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <h3>Docker</h3>
+                <p>Contenedores, Orchestración</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>ES6+, Node.js, APIs</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 92%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <p>SPAs, Hooks, Redux</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 88%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>PostgreSQL</h3>
+                <p>Diseño, Consultas, Optimización</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt>
+                <div class="skill-icon">
+                    <i class="fab fa-linux"></i>
+                </div>
+                <h3>Linux</h3>
+                <p>Admin, Bash, Servidores</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-subtitle">Proyectos que demuestran mi capacidad</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🤖 AI Assistant - Bot IA Local</h3>
+                    <p>Asistente de IA con Ollama, Python y FastAPI. Despliegue Docker completo con modelos LLM locales.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>AI/ML</span>
+                        <span>Docker</span>
+                        <span>Ollama</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/ai-assistant" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #00d4ff">
+                    <div class="project-overlay">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🛒 E-Commerce API REST</h3>
+                    <p>Backend completo para tienda online con FastAPI, PostgreSQL, JWT auth y pasarela de pagos Stripe.</p>
+                    <div class="project-tags">
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/ecommerce-api" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #8b5cf6">
+                    <div class="project-overlay">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🏠 Smart Home - Domótica</h3>
+                    <p>Sistema de domótica con Home Assistant, MQTT, Docker y automatizaciones. Control de luces, sensores y cámaras.</p>
+                    <div class="project-tags">
+                        <span>Home Assistant</span>
+                        <span>MQTT</span>
+                        <span>Docker</span>
+                        <span>IoT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/smart-home" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ff006e">
+                    <div class="project-overlay">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>📊 IoT Dashboard</h3>
+                    <p>Dashboard en tiempo real para monitoreo IoT con WebSocket, React y base de datos PostgreSQL.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>WebSocket</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/iot-dashboard" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #27ca40">
+                    <div class="project-overlay">
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🐳 Docker Production Stack</h3>
+                    <p>Stack de producción con Nginx, Portainer, Watchtower, SSL/TLS y Docker Compose para servidores.</p>
+                    <div class="project-tags">
+                        <span>Docker</span>
+                        <span>Nginx</span>
+                        <span>SSL</span>
+                        <span>DevOps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/docker-production" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #f5a623">
+                    <div class="project-overlay">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🔐 VPN WireGuard Server</h3>
+                    <p>Servidor VPN seguro con WireGuard en Docker. Acceso remoto a red local desde cualquier lugar.</p>
+                    <div class="project-tags">
+                        <span>WireGuard</span>
+                        <span>VPN</span>
+                        <span>Docker</span>
+                        <span>Seguridad</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/wireguard-vpn" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #7B42BC">
+                    <div class="project-overlay">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🔄 Pipeline CI/CD Completo</h3>
+                    <p>Pipeline empresarial con GitHub Actions, Docker multi-etapa, Kubernetes, Terraform y AWS. Testing automatizado y security scanning.</p>
+                    <div class="project-tags">
+                        <span>GitHub Actions</span>
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/ci-cd-pipeline" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ff4757">
+                    <div class="project-overlay">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🦹‍♂️ Sistema IDS/IPS con ML</h3>
+                    <p>Sistema de detección y prevención de intrusiones con Machine Learning. Análisis de tráfico en tiempo real con alertas y dashboard Grafana.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Snort</span>
+                        <span>Grafana</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reimon2563/network-ids-ips" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #009688">
+                    <div class="project-overlay">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>⚡ Dify - AI Workflow Platform</h3>
+                    <p>Plataforma de producción para desarrollo de agentes AI. Workflows de IA generativa con interfaz visual y API REST.</p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>LLM</span>
+                        <span>Python</span>
+                        <span>API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langgenius/dify" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ff7300">
+                    <div class="project-overlay">
+                        <i class="fas fa-link"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🔗 LangChain - AI Agents</h3>
+                    <p>Plataforma de ingeniería de agentes AI. Construye aplicaciones con LLMs, RAG, memoria y herramientas personalizadas.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>LLM</span>
+                        <span>AI/ML</span>
+                        <span>Agents</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/langchain-ai/langchain" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ffd700">
+                    <div class="project-overlay">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🧠 LLMs from Scratch</h3>
+                    <p>Implementación de un ChatGPT-like LLM en PyTorch desde cero. Paso a paso con explicaciones detalladas.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Machine Learning</span>
+                        <span>LLM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #326CE5">
+                    <div class="project-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>▶️ Act - GitHub Actions Local</h3>
+                    <p>Ejecuta tus GitHub Actions localmente. Testing de workflows sin push ni pull requests.</p>
+                    <div class="project-tags">
+                        <span>DevOps</span>
+                        <span>GitHub Actions</span>
+                        <span>Go</span>
+                        <span>CI/CD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/nektos/act" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #e535ab">
+                    <div class="project-overlay">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🚀 Argo CD - GitOps</h3>
+                    <p>Despliegue continuo declarativo para Kubernetes. GitOps con sincronización automática de aplicaciones.</p>
+                    <div class="project-tags">
+                        <span>Kubernetes</span>
+                        <span>GitOps</span>
+                        <span>DevOps</span>
+                        <span>Go</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/argoproj/argo-cd" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #f02d5e">
+                    <div class="project-overlay">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>📦 Appwrite - Cloud Backend</h3>
+                    <p>Infraestructura cloud completa para web, móvil y apps AI. Auth, Bases de datos, Storage y Functions.</p>
+                    <div class="project-tags">
+                        <span>Docker</span>
+                        <span>Backend</span>
+                        <span>API</span>
+                        <span>Self-hosted</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/appwrite/appwrite" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #0078d4">
+                    <div class="project-overlay">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>☁️ Coolify - PaaS Self-hosted</h3>
+                    <p>Alternativa open-source a Vercel, Netlify y Heroku. Self-hosting de aplicaciones, databases y más.</p>
+                    <div class="project-tags">
+                        <span>Docker</span>
+                        <span>PaaS</span>
+                        <span>DevOps</span>
+                        <span>Self-hosted</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/coollabsio/coolify" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #00d86c">
+                    <div class="project-overlay">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>⏱️ Uptime Kuma - Monitoring</h3>
+                    <p>Fancy herramienta de monitoreo self-hosted. Monitoreo de servicios con UI beautiful y notificaciones.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span>
+                        <span>Monitoring</span>
+                        <span>Docker</span>
+                        <span>Self-hosted</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/louislam/uptime-kuma" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #9c27b0">
+                    <div class="project-overlay">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🚫 Pi-hole - Network AdBlocker</h3>
+                    <p>Bloqueador de anuncios a nivel de red. Protege todos tus dispositivos sin instalar software adicional.</p>
+                    <div class="project-tags">
+                        <span>DNS</span>
+                        <span>Networking</span>
+                        <span>Security</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pi-hole/pi-hole" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #00bcd4">
+                    <div class="project-overlay">
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🌐 Nginx Proxy Manager</h3>
+                    <p>Gestión visual de proxies inversos y certificados SSL (Let's Encrypt). Expón tus servicios de forma segura.</p>
+                    <div class="project-tags">
+                        <span>Nginx</span>
+                        <span>SSL</span>
+                        <span>Docker</span>
+                        <span>DevOps</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/NginxProxyManager/nginx-proxy-manager" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ffeb3b">
+                    <div class="project-overlay">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>🎨 Stable Diffusion WebUI</h3>
+                    <p>Interfaz web para generación de imágenes mediante IA. Generación local de arte con modelos de difusión.</p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Stable Diffusion</span>
+                        <span>Python</span>
+                        <span>ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image" style="--accent: #ff9800">
+                    <div class="project-overlay">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>☁️ LocalStack - Cloud Mock</h3>
+                    <p>Entorno local de servicios cloud (AWS). Desarrolla y testea aplicaciones cloud sin costes ni conexión.</p>
+                    <div class="project-tags">
+                        <span>AWS</span>
+                        <span>DevOps</span>
+                        <span>Cloud</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/localstack/localstack" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#contact" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="stack">
+        <div class="section-header">
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <p class="section-subtitle">Tecnologías que uso a diario</p>
+        </div>
+        <div class="stack-grid">
+            <div class="stack-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-sass"></i>
+                <span>SASS</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-node"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-flask"></i>
+                <span>Flask</span>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-server"></i>
+                <span>FastAPI</span>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </div>
+            <div class="stack-item">
+                <i class="fab fa-raspberry-pi"></i>
+                <span>RPi</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Trabajamos juntos?</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>jgrdev@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>GitHub</h3>
+                        <p>@reimon2563</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <p>in/reimon2563</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span>Enviar Mensaje</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>&lt;jgrdev/&gt;</span>
+            </div>
+            <p class="footer-text">© 2026 reimon2563. Desarrollado con <i class="fas fa-heart"></i> y mucho café</p>
+            <div class="footer-links">
+                <a href="#home">Inicio</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
