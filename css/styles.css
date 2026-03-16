@@ -410,6 +410,7 @@ section {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    opacity: 1; /* Ensure visible by default */
 }
 
 .skill-card::before {
@@ -509,6 +510,7 @@ section {
     border-radius: 20px;
     overflow: hidden;
     transition: var(--transition);
+    opacity: 1; /* Ensure visible by default */
 }
 
 .project-card:hover {

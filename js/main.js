@@ -124,13 +124,14 @@ function initScrollAnimations() {
         gsap.from('.project-card', {
             scrollTrigger: {
                 trigger: '.projects',
-                start: 'top 80%',
+                start: 'top 90%',
             },
-            y: 60,
+            y: 30,
             opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: 'power3.out'
+            duration: 0.5,
+            stagger: 0.1,
+            ease: 'power2.out',
+            clearProps: "all" // Ensure it finishes with original styles
         });
 
         // Stack items
